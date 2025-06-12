@@ -6,11 +6,13 @@ import { CaptainDataContext } from '../context/CaptainContext'
 
 const Captainlogin = () => {
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const { captain, setCaptain } = React.useContext(CaptainDataContext)
+  const [ email, setEmail ] = useState('')
+  const [ password, setPassword ] = useState('')
 
-  const navigate = useNavigate();
+  const { captain, setCaptain } = React.useContext(CaptainDataContext)
+  const navigate = useNavigate()
+
+
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -74,7 +76,7 @@ const Captainlogin = () => {
       </div>
       <div>
         <Link
-        to='/login'
+          to='/login'
           className='bg-[#d5622d] flex items-center justify-center text-white font-semibold mb-5 rounded-lg px-4 py-2 w-full text-lg placeholder:text-base'
         >Sign in as User</Link>
       </div>
