@@ -73,8 +73,7 @@ frontend/
 Create a `.env` file in the `frontend` folder with the following variables (update the backend URL as needed):
 
 ```
-VITE_BASE_URL=http://localhost:3000
-VITE_API_URL=http://localhost:3000
+VITE_BASE_URL=http://localhost:4000
 ```
 
 ## Installation & Running
